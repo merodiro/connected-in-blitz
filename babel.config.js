@@ -1,4 +1,4 @@
 module.exports = {
-  presets: ["blitz/babel"],
+  presets: ['blitz/babel'],
   plugins: [],
 }

@@ -1,7 +1,7 @@
-import { Ctx, NotFoundError, SecurePassword } from "blitz"
-import db from "db"
-import { authenticateUser } from "./login"
-import { ChangePasswordInput, ChangePasswordInputType } from "../validations"
+import { Ctx, NotFoundError, SecurePassword } from 'blitz'
+import db from 'db'
+import { authenticateUser } from './login'
+import { ChangePasswordInput, ChangePasswordInputType } from '../validations'
 
 export default async function changePassword(input: ChangePasswordInputType, ctx: Ctx) {
   ctx.session.authorize()

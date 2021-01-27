@@ -15,10 +15,6 @@
   "prisma": {
     "schema": "db/schema.prisma"
   },
-  "prettier": {
-    "semi": false,
-    "printWidth": 100
-  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged && pretty-quick --staged",

@@ -1,6 +1,6 @@
-import React, { useState, ReactNode, PropsWithoutRef } from "react"
-import { FormProvider, useForm, UseFormOptions } from "react-hook-form"
-import * as z from "zod"
+import React, { useState, ReactNode, PropsWithoutRef } from 'react'
+import { FormProvider, useForm, UseFormOptions } from 'react-hook-form'
+import * as z from 'zod'
 
 type FormProps<S extends z.ZodType<any, any>> = {
   /** All your form fields */
@@ -9,15 +9,15 @@ type FormProps<S extends z.ZodType<any, any>> = {
   submitText?: string
   schema?: S
   onSubmit: (values: z.infer<S>) => Promise<void | OnSubmitResult>
-  initialValues?: UseFormOptions<z.infer<S>>["defaultValues"]
-} & Omit<PropsWithoutRef<JSX.IntrinsicElements["form"]>, "onSubmit">
+  initialValues?: UseFormOptions<z.infer<S>>['defaultValues']
+} & Omit<PropsWithoutRef<JSX.IntrinsicElements['form']>, 'onSubmit'>
 
 type OnSubmitResult = {
   FORM_ERROR?: string
   [prop: string]: any
 }
 
-export const FORM_ERROR = "FORM_ERROR"
+export const FORM_ERROR = 'FORM_ERROR'
 
 export function Form<S extends z.ZodType<any, any>>({
   children,
@@ -28,7 +28,7 @@ export function Form<S extends z.ZodType<any, any>>({
   ...props
 }: FormProps<S>) {
   const ctx = useForm<z.infer<S>>({
-    mode: "onBlur",
+    mode: 'onBlur',
     resolver: async (values) => {
       try {
         if (schema) {
@@ -53,7 +53,7 @@ export function Form<S extends z.ZodType<any, any>>({
               setFormError(value)
             } else {
               ctx.setError(key as any, {
-                type: "submit",
+                type: 'submit',
                 message: value,
               })
             }
@@ -66,7 +66,7 @@ export function Form<S extends z.ZodType<any, any>>({
         {children}
 
         {formError && (
-          <div role="alert" style={{ color: "red" }}>
+          <div role="alert" style={{ color: 'red' }}>
             {formError}
           </div>
         )}

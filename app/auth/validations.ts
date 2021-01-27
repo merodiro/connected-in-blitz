@@ -1,4 +1,4 @@
-import * as z from "zod"
+import * as z from 'zod'
 
 const password = z.string().min(10).max(100)
 
@@ -27,7 +27,7 @@ export const ResetPasswordInput = z
   })
   .refine((data) => data.password === data.passwordConfirmation, {
     message: "Passwords don't match",
-    path: ["passwordConfirmation"], // set the path of the error
+    path: ['passwordConfirmation'], // set the path of the error
   })
 export type ResetPasswordInputType = z.infer<typeof ResetPasswordInput>
 

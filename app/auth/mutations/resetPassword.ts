@@ -1,11 +1,11 @@
-import { Ctx, SecurePassword, hash256 } from "blitz"
-import db from "db"
-import { ResetPasswordInput, ResetPasswordInputType } from "../validations"
-import login from "./login"
+import { Ctx, SecurePassword, hash256 } from 'blitz'
+import db from 'db'
+import { ResetPasswordInput, ResetPasswordInputType } from '../validations'
+import login from './login'
 
 export class ResetPasswordError extends Error {
-  name = "ResetPasswordError"
-  message = "Reset password link is invalid or it has expired."
+  name = 'ResetPasswordError'
+  message = 'Reset password link is invalid or it has expired.'
 }
 
 export default async function resetPassword(input: ResetPasswordInputType, ctx: Ctx) {
@@ -14,7 +14,7 @@ export default async function resetPassword(input: ResetPasswordInputType, ctx: 
   // 1. Try to find this token in the database
   const hashedToken = hash256(token)
   const possibleToken = await db.token.findFirst({
-    where: { hashedToken, type: "RESET_PASSWORD" },
+    where: { hashedToken, type: 'RESET_PASSWORD' },
     include: { user: true },
   })
 

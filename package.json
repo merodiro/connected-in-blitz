@@ -42,10 +42,12 @@
     "zod": "1.11.11"
   },
   "devDependencies": {
+    "@types/faker": "5.1.5",
     "@types/preview-email": "2.0.0",
     "@types/react": "17.0.0",
     "autoprefixer": "10",
     "eslint": "7.18.0",
+    "faker": "5.2.0",
     "husky": "4.3.8",
     "lint-staged": "10.5.3",
     "postcss": "8",

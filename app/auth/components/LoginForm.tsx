@@ -13,10 +13,11 @@ export const LoginForm = (props: LoginFormProps) => {
   const [loginMutation] = useMutation(login)
 
   return (
-    <div>
-      <h1>Login</h1>
+    <div className="flex-1 max-w-xl mt-4">
+      <h1 className="text-3xl font-extrabold text-center text-gray-900">Sign in to your account</h1>
 
       <Form
+        className="mt-4"
         submitText="Login"
         schema={LoginInput}
         initialValues={{ email: '', password: '' }}
@@ -36,17 +37,20 @@ export const LoginForm = (props: LoginFormProps) => {
           }
         }}
       >
-        <LabeledTextField name="email" label="Email" placeholder="Email" />
+        <LabeledTextField name="email" label="Email" placeholder="Email" type="email" />
         <LabeledTextField name="password" label="Password" placeholder="Password" type="password" />
         <div>
           <Link href="/forgot-password">
-            <a>Forgot your password?</a>
+            <a className="text-blue-600 underline">Forgot your password?</a>
           </Link>
         </div>
       </Form>
 
       <div style={{ marginTop: '1rem' }}>
-        Or <Link href="/signup">Sign Up</Link>
+        Or{' '}
+        <Link href="/signup">
+          <a className="text-blue-600 underline">Sign Up</a>
+        </Link>
       </div>
     </div>
   )

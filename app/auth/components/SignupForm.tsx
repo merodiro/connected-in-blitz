@@ -13,10 +13,11 @@ export const SignupForm = (props: SignupFormProps) => {
   const [signupMutation] = useMutation(signup)
 
   return (
-    <div>
-      <h1>Create an Account</h1>
+    <div className="flex-1 max-w-xl mt-4">
+      <h1 className="text-3xl font-extrabold text-center text-gray-900">Create an Account</h1>
 
       <Form
+        className="mt-4"
         submitText="Create Account"
         schema={SignupInput}
         initialValues={{ email: '', password: '' }}
@@ -34,7 +35,7 @@ export const SignupForm = (props: SignupFormProps) => {
           }
         }}
       >
-        <LabeledTextField name="email" label="Email" placeholder="Email" />
+        <LabeledTextField name="email" label="Email" placeholder="Email" type="email" />
         <LabeledTextField name="password" label="Password" placeholder="Password" type="password" />
       </Form>
     </div>

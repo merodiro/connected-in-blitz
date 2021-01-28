@@ -24,33 +24,21 @@ export const LabeledTextField = React.forwardRef<HTMLInputElement, LabeledTextFi
 
     return (
       <div {...outerProps}>
-        <label>
+        <label className="block text-sm font-medium text-gray-700">
           {label}
-          <input disabled={isSubmitting} {...props} ref={register} />
+          <input
+            disabled={isSubmitting}
+            {...props}
+            className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+            ref={register}
+          />
         </label>
 
         {error && (
-          <div role="alert" style={{ color: 'red' }}>
+          <div role="alert" className="text-red-600">
             {error}
           </div>
         )}
-
-        <style jsx>{`
-          label {
-            display: flex;
-            flex-direction: column;
-            align-items: start;
-            font-size: 1rem;
-          }
-          input {
-            font-size: 1rem;
-            padding: 0.25rem 0.5rem;
-            border-radius: 3px;
-            border: 1px solid purple;
-            appearance: none;
-            margin-top: 0.5rem;
-          }
-        `}</style>
       </div>
     )
   }

@@ -7,9 +7,9 @@ const SignupPage: BlitzPage = () => {
   const router = useRouter()
 
   return (
-    <div>
+    <main className="container flex items-center justify-center h-full mx-auto">
       <SignupForm onSuccess={() => router.push('/')} />
-    </div>
+    </main>
   )
 }
 

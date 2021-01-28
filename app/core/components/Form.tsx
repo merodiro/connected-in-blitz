@@ -24,6 +24,7 @@ export function Form<S extends z.ZodType<any, any>>({
   submitText,
   schema,
   initialValues,
+  className,
   onSubmit,
   ...props
 }: FormProps<S>) {
@@ -59,29 +60,27 @@ export function Form<S extends z.ZodType<any, any>>({
             }
           }
         })}
-        className="form"
+        className={`space-y-4 ${className}`}
         {...props}
       >
         {/* Form fields supplied as children are rendered here */}
         {children}
 
         {formError && (
-          <div role="alert" style={{ color: 'red' }}>
+          <div role="alert" className="text-red-600">
             {formError}
           </div>
         )}
 
         {submitText && (
-          <button type="submit" disabled={ctx.formState.isSubmitting}>
+          <button
+            type="submit"
+            className="inline-flex justify-center px-4 py-2 text-sm font-medium text-white bg-blue-600 border border-transparent rounded-md shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+            disabled={ctx.formState.isSubmitting}
+          >
             {submitText}
           </button>
         )}
-
-        <style global jsx>{`
-          .form > * + * {
-            margin-top: 1rem;
-          }
-        `}</style>
       </form>
     </FormProvider>
   )

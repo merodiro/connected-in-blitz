@@ -1,7 +1,16 @@
-import { AppProps, ErrorComponent, useRouter, AuthenticationError, AuthorizationError } from 'blitz'
+import {
+  AppProps,
+  ErrorComponent,
+  useRouter,
+  AuthenticationError,
+  AuthorizationError,
+  Head,
+} from 'blitz'
 import { ErrorBoundary, FallbackProps } from 'react-error-boundary'
 import { queryCache } from 'react-query'
 import LoginForm from 'app/auth/components/LoginForm'
+
+import 'app/core/styles/index.css'
 
 export default function App({ Component, pageProps }: AppProps) {
   const getLayout = Component.getLayout || ((page) => page)
@@ -17,6 +26,15 @@ export default function App({ Component, pageProps }: AppProps) {
         queryCache.resetErrorBoundaries()
       }}
     >
+      <Head>
+        <link
+          rel="preload"
+          href="/fonts/inter-var-latin.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+      </Head>
       {getLayout(<Component {...pageProps} />)}
     </ErrorBoundary>
   )

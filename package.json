@@ -7,7 +7,9 @@
     "build": "blitz build",
     "lint": "eslint --ignore-path .gitignore --ext .js,.ts,.tsx .",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "start:production": "blitz start --production --port $PORT",
+    "heroku-postbuild": "blitz prisma migrate deploy --preview-feature && blitz build"
   },
   "browserslist": [
     "defaults"

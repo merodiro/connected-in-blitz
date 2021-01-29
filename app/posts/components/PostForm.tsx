@@ -3,7 +3,7 @@ import LabeledTextAreaField from 'app/core/components/TextAreaField'
 import { useMutation } from 'blitz'
 import React from 'react'
 import createPost from '../mutations/createPost'
-import { CreatePostInput } from '../validations'
+import { CreatePost } from '../validations'
 
 type PostFormProps = {
   onSuccess?: () => void
@@ -16,7 +16,7 @@ const PostForm = (props: PostFormProps) => {
     <Form
       className="max-w-2xl mt-4"
       submitText="Post"
-      schema={CreatePostInput}
+      schema={CreatePost}
       initialValues={{ body: '' }}
       onSubmit={async (values) => {
         try {

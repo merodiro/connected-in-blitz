@@ -462,20 +462,20 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@blitzjs/babel-preset@0.30.0-canary.1":
-  version "0.30.0-canary.1"
-  resolved "https://registry.yarnpkg.com/@blitzjs/babel-preset/-/babel-preset-0.30.0-canary.1.tgz#92406f93e2a26bf10d9370ca220c6e8bf3b5ce76"
-  integrity sha512-sqod2dDJsGqhk0leATAAlcnfZp9L9i6y/n8740JVEGduuR18VMPET2lDcdGOTqoRmfJ7qq3nfR8jTp+co8Hf6A==
+"@blitzjs/babel-preset@0.30.0-canary.2":
+  version "0.30.0-canary.2"
+  resolved "https://registry.yarnpkg.com/@blitzjs/babel-preset/-/babel-preset-0.30.0-canary.2.tgz#3cce757ac0171aed8bc7698e882099c10ef78274"
+  integrity sha512-JoFghk7KBTMlTBAiZsDm/93QxZMZby4zf8QDNz/6jztxEy/9+eECXLsMqVPrjA3iMcHqZm/l4CWWBXXMNQDrow==
   dependencies:
     babel-plugin-superjson-next "0.1.11"
 
-"@blitzjs/cli@0.30.0-canary.1":
-  version "0.30.0-canary.1"
-  resolved "https://registry.yarnpkg.com/@blitzjs/cli/-/cli-0.30.0-canary.1.tgz#3100f9cca00fc54e7e32e38e05bacf5d8ac445a7"
-  integrity sha512-pW2uYZI4QXlTz2CrttjQb5Ljrul/uAWNQBoG2zqVIGYHH/iNdHA9czB9eXVhLulCZlt9w5QaDld1irKHgSTyzA==
+"@blitzjs/cli@0.30.0-canary.2":
+  version "0.30.0-canary.2"
+  resolved "https://registry.yarnpkg.com/@blitzjs/cli/-/cli-0.30.0-canary.2.tgz#7833034bce55806cb2b8579e2dcae1e788cc08a9"
+  integrity sha512-Fj8VmM1BIc+e1bopy6ijYVS+nWP6972idJ1hy6W9JMpD6JEWyVpJJ9DKrbkMZYwTwgiHiitfLWtjxs8S946Y1A==
   dependencies:
-    "@blitzjs/display" "0.30.0-canary.1"
-    "@blitzjs/repl" "0.30.0-canary.1"
+    "@blitzjs/display" "0.30.0-canary.2"
+    "@blitzjs/repl" "0.30.0-canary.2"
     "@oclif/command" "1.8.0"
     "@oclif/config" "1.17.0"
     "@oclif/plugin-autocomplete" "0.3.0"
@@ -504,17 +504,17 @@
     tsconfig-paths "3.9.0"
     v8-compile-cache "2.2.0"
 
-"@blitzjs/config@0.30.0-canary.1":
-  version "0.30.0-canary.1"
-  resolved "https://registry.yarnpkg.com/@blitzjs/config/-/config-0.30.0-canary.1.tgz#13dc48f5b21ea7f15ef7eafc2ae7d3d31469b0e3"
-  integrity sha512-txTPNd8qcFUoe3nyD6GkzZZwMQ2Xuhcvb/o/Em+uhHb1u6dbuaKDLle3L/pvPHmKPAUaVpyE9gzqk81xL/zzdA==
+"@blitzjs/config@0.30.0-canary.2":
+  version "0.30.0-canary.2"
+  resolved "https://registry.yarnpkg.com/@blitzjs/config/-/config-0.30.0-canary.2.tgz#31480a7465f2a743079bcf2585b656c0adddf298"
+  integrity sha512-CLdctdeWonlc5pjlpsKTB3wsNBF+ZqHZau7WicvhQ4mjc0x9XfOo/DhGZ89POPT3jmV6pyoRpOJ/o6zJKBuSqg==
 
-"@blitzjs/core@0.30.0-canary.1":
-  version "0.30.0-canary.1"
-  resolved "https://registry.yarnpkg.com/@blitzjs/core/-/core-0.30.0-canary.1.tgz#b11fe169fcdc704659bf88978e5cc87159861c0d"
-  integrity sha512-STsLN5dR+rgzDvhp4CFhmr6pkefD98rxrSlmrfsmRdoQrRFTQUGuyF3CZazxNO3xsD25r3A1ay4qRhlab+p6qQ==
+"@blitzjs/core@0.30.0-canary.2":
+  version "0.30.0-canary.2"
+  resolved "https://registry.yarnpkg.com/@blitzjs/core/-/core-0.30.0-canary.2.tgz#c5a1f7a05d177ddb262652f8a0e2356f3eceac78"
+  integrity sha512-mbOomAGaH7q3Z1eHdZaHfhqAv2yc3/iDvAQC27LqhC/L0kpjehe8kk01bbYvlv96NbuRbbEJ8uvpxLVyw5dioQ==
   dependencies:
-    "@blitzjs/display" "0.30.0-canary.1"
+    "@blitzjs/display" "0.30.0-canary.2"
     "@types/htmlescape" "^1.1.1"
     "@types/secure-password" "3.1.0"
     b64-lite "^1.4.0"
@@ -530,23 +530,23 @@
     superjson "1.5.2"
     zod "^1.5.0"
 
-"@blitzjs/display@0.30.0-canary.1":
-  version "0.30.0-canary.1"
-  resolved "https://registry.yarnpkg.com/@blitzjs/display/-/display-0.30.0-canary.1.tgz#f2b70fcdde88d9082fb8954d514eb942f49a0b48"
-  integrity sha512-2OByZCx8N9Ll7uNUdpNa1c8l9nCpdRWQl9wWL//swIhJRMTfDH1TnSymiSbR55FOK91crbK8cnExlA9w7ObWPg==
+"@blitzjs/display@0.30.0-canary.2":
+  version "0.30.0-canary.2"
+  resolved "https://registry.yarnpkg.com/@blitzjs/display/-/display-0.30.0-canary.2.tgz#cf4d7b52903f8b19c2a26d47ea8fb7b3935d8b9a"
+  integrity sha512-h6XnvOqhxe5FNkAtTWcX2jUKJAhNoyviG8pJfrp67FLDdMA8xP+a3rhjHS/dvO6MDjybgvh8Pz/QxgFd8yPayg==
   dependencies:
-    "@blitzjs/display" "0.30.0-canary.1"
+    "@blitzjs/display" "0.30.0-canary.2"
     chalk "^4.1.0"
     console-table-printer "^2.7.5"
     ora "^5.2.0"
     tslog "^3.1.0"
 
-"@blitzjs/file-pipeline@0.30.0-canary.1":
-  version "0.30.0-canary.1"
-  resolved "https://registry.yarnpkg.com/@blitzjs/file-pipeline/-/file-pipeline-0.30.0-canary.1.tgz#59a8505cb33eae4262ca9557f93983e3e06fb43c"
-  integrity sha512-cTJnxJdHhJFw3TrnoQiagZ6K+hNhsvzLIA+xqUNi/NogAM4AO3xyTh1cpaveahfqigeb3TTtmV8U5JCAILj0eg==
+"@blitzjs/file-pipeline@0.30.0-canary.2":
+  version "0.30.0-canary.2"
+  resolved "https://registry.yarnpkg.com/@blitzjs/file-pipeline/-/file-pipeline-0.30.0-canary.2.tgz#a4b7e451b5ae301add016a539f70c7e3ca00e45e"
+  integrity sha512-vBUpVOZ2PqNZ0o75+WZfVP8yviZwG0Rv+1IGjoYs8X4cCEWj1trCoIHlUIHk+rArS0weWWUn7siTb72rZ18aXQ==
   dependencies:
-    "@blitzjs/display" "0.30.0-canary.1"
+    "@blitzjs/display" "0.30.0-canary.2"
     chalk "^4.1.0"
     chokidar "3.5.1"
     flush-write-stream "2.0.0"
@@ -562,14 +562,14 @@
     vinyl-file "3.0.0"
     vinyl-fs "3.0.3"
 
-"@blitzjs/generator@0.30.0-canary.1":
-  version "0.30.0-canary.1"
-  resolved "https://registry.yarnpkg.com/@blitzjs/generator/-/generator-0.30.0-canary.1.tgz#1b6520a30a4fc08705a2b1f2637c916791942695"
-  integrity sha512-2BpOmi5txbGTZtQRK2qiZuidCczmcbdGOrag3NpnOkklg2CemgmLT9zzuUGQtqpnz81WY+y8ZW7rVZ14z48shQ==
+"@blitzjs/generator@0.30.0-canary.2":
+  version "0.30.0-canary.2"
+  resolved "https://registry.yarnpkg.com/@blitzjs/generator/-/generator-0.30.0-canary.2.tgz#b6b9feab8644a7f001907d9d01208a556f5c4bef"
+  integrity sha512-ud25+2tl9rp31LdmmGZAU3LpzxV2FzsrUz2YK20JUIJhjSAexVw07wi6v18Fi+6mhXpC4JYNKGJY1X/tO/HyZw==
   dependencies:
     "@babel/core" "7.12.10"
     "@babel/plugin-transform-typescript" "7.12.1"
-    "@blitzjs/display" "0.30.0-canary.1"
+    "@blitzjs/display" "0.30.0-canary.2"
     "@types/jscodeshift" "0.7.2"
     chalk "^4.1.0"
     cross-spawn "7.0.3"
@@ -586,16 +586,16 @@
     username "^5.1.0"
     vinyl "2.2.1"
 
-"@blitzjs/installer@0.30.0-canary.1":
-  version "0.30.0-canary.1"
-  resolved "https://registry.yarnpkg.com/@blitzjs/installer/-/installer-0.30.0-canary.1.tgz#388eda8832c5b4a0a32fbc525b3cf90442c6d465"
-  integrity sha512-w9Qg+mUtAG7FJ8BXwMHO/ALrLJtdrhTfVSxa7xgbOdKt2wopXNNExoXeV5dlyHYalQzahPh+qSk2tc3UEFNciw==
+"@blitzjs/installer@0.30.0-canary.2":
+  version "0.30.0-canary.2"
+  resolved "https://registry.yarnpkg.com/@blitzjs/installer/-/installer-0.30.0-canary.2.tgz#e953d13e716b907fe8a15d9c2cf9e516cc5d6c49"
+  integrity sha512-gKyBaf9kZfIXcmIKHLriNebWiJXPV6p0eMU0kx/8BD6ZYNoONLsH5afp5bdNearCEg8PyoAsC0MyIeMsOVog9g==
   dependencies:
     "@babel/core" "7.12.10"
     "@babel/plugin-transform-typescript" "7.12.1"
-    "@blitzjs/config" "0.30.0-canary.1"
-    "@blitzjs/display" "0.30.0-canary.1"
-    "@blitzjs/generator" "0.30.0-canary.1"
+    "@blitzjs/config" "0.30.0-canary.2"
+    "@blitzjs/display" "0.30.0-canary.2"
+    "@blitzjs/generator" "0.30.0-canary.2"
     "@types/jscodeshift" "0.7.2"
     cross-spawn "7.0.3"
     diff "5.0.0"
@@ -610,22 +610,22 @@
     recast "0.20.4"
     ts-node "^9.1.1"
 
-"@blitzjs/repl@0.30.0-canary.1":
-  version "0.30.0-canary.1"
-  resolved "https://registry.yarnpkg.com/@blitzjs/repl/-/repl-0.30.0-canary.1.tgz#fd2cc3a79be0a413c16eb1e046f3c8c8698208e4"
-  integrity sha512-Og4JxsgNw2ENbTV1fQZ8GPWAUowhZLWfw7+K1Y14T86qkWHnOB2YmGxutRff9lFR1yyCXR5fvyTeQKHDV5lRjQ==
+"@blitzjs/repl@0.30.0-canary.2":
+  version "0.30.0-canary.2"
+  resolved "https://registry.yarnpkg.com/@blitzjs/repl/-/repl-0.30.0-canary.2.tgz#d9a096dd6b44357c51726710101f01d67fad4ba2"
+  integrity sha512-zBcCrTkFGkJ2yGIxAdSRqnRRlBEGfXX3Tdtb4wOZ9jysT2pIZUt9sO1UWpiVyiezv+t+rJ0PPZ3C8MWrMOKRew==
   dependencies:
     chokidar "3.5.1"
     globby "11.0.2"
     pkg-dir "^5.0.0"
     progress "^2.0.3"
 
-"@blitzjs/server@0.30.0-canary.1":
-  version "0.30.0-canary.1"
-  resolved "https://registry.yarnpkg.com/@blitzjs/server/-/server-0.30.0-canary.1.tgz#b7ee206fd7885d1867ed536ae4ae73ddfa6f4877"
-  integrity sha512-cnXYo0CFqTgF7ySEJs6drEPjzKkqYKLQac3bgswB8sprh1vdK5vh/lhgFPpbX7Ni38TcL6XIpIh+borpIzObsA==
+"@blitzjs/server@0.30.0-canary.2":
+  version "0.30.0-canary.2"
+  resolved "https://registry.yarnpkg.com/@blitzjs/server/-/server-0.30.0-canary.2.tgz#132f92bb3bf8c15ba295820aef826424e7118185"
+  integrity sha512-PXAtWcTo3WTe+OTCZliV4gmf45fxpod+7BdbFf4Fzc2c88gpEmpNxmifZol7ahHlA6mMVv58NTOUsbS2dg4EWw==
   dependencies:
-    "@blitzjs/file-pipeline" "0.30.0-canary.1"
+    "@blitzjs/file-pipeline" "0.30.0-canary.2"
     b64-lite "^1.4.0"
     cookie "^0.4.1"
     cross-spawn "7.0.3"
@@ -2576,25 +2576,25 @@ bl@^4.0.3:
     inherits "^2.0.4"
     readable-stream "^3.4.0"
 
-blitz@0.30.0-canary.1:
-  version "0.30.0-canary.1"
-  resolved "https://registry.yarnpkg.com/blitz/-/blitz-0.30.0-canary.1.tgz#671236816ab187193a3f7c4f649f2fa06cacf8b2"
-  integrity sha512-lYRLk1QVqwM23IDfQ10xuf18lP/rewX+C8PskGnZ9xgMYwS51kz/eb/W+Ow4Zz+xyNKDhUaMNkXgsdSnTHRkdA==
+blitz@0.30.0-canary.2:
+  version "0.30.0-canary.2"
+  resolved "https://registry.yarnpkg.com/blitz/-/blitz-0.30.0-canary.2.tgz#7b9cead04a628f49744ca9b27f69c23c92f9ea71"
+  integrity sha512-LqgEVTTkzmAkN6iheO6AASMnx8Zk/n87UVqPvHlQHPBZVrcRwbj6l+Azn4ymX4/FG6ZWWTm6BtACgWe3iZmmng==
   dependencies:
-    "@blitzjs/babel-preset" "0.30.0-canary.1"
-    "@blitzjs/cli" "0.30.0-canary.1"
-    "@blitzjs/config" "0.30.0-canary.1"
-    "@blitzjs/core" "0.30.0-canary.1"
-    "@blitzjs/display" "0.30.0-canary.1"
-    "@blitzjs/generator" "0.30.0-canary.1"
-    "@blitzjs/installer" "0.30.0-canary.1"
-    "@blitzjs/server" "0.30.0-canary.1"
+    "@blitzjs/babel-preset" "0.30.0-canary.2"
+    "@blitzjs/cli" "0.30.0-canary.2"
+    "@blitzjs/config" "0.30.0-canary.2"
+    "@blitzjs/core" "0.30.0-canary.2"
+    "@blitzjs/display" "0.30.0-canary.2"
+    "@blitzjs/generator" "0.30.0-canary.2"
+    "@blitzjs/installer" "0.30.0-canary.2"
+    "@blitzjs/server" "0.30.0-canary.2"
     "@testing-library/jest-dom" "5.11.9"
     "@testing-library/react" "^11.2.3"
     "@testing-library/react-hooks" "^4.0.1"
     "@types/jest" "^26.0.20"
     envinfo "^7.7.3"
-    eslint-config-blitz "0.30.0-canary.1"
+    eslint-config-blitz "0.30.0-canary.2"
     jest "^26.6.3"
     jest-environment-jsdom-fourteen "^1.0.1"
     jest-watch-typeahead "^0.6.1"
@@ -4325,10 +4325,10 @@ escodegen@^1.11.0, escodegen@^1.14.1:
   optionalDependencies:
     source-map "~0.6.1"
 
-eslint-config-blitz@0.30.0-canary.1:
-  version "0.30.0-canary.1"
-  resolved "https://registry.yarnpkg.com/eslint-config-blitz/-/eslint-config-blitz-0.30.0-canary.1.tgz#911e4ea9a796fe3ce146e0d1f457d2add0833918"
-  integrity sha512-PcjbtwNTJ6XMNQu5g79aazLqURHZm4xlT1NmfX1EY1n7SbuIBqtB7i5r4cAbR7XrzgR5Bo6F6eoDPgC3toJaeQ==
+eslint-config-blitz@0.30.0-canary.2:
+  version "0.30.0-canary.2"
+  resolved "https://registry.yarnpkg.com/eslint-config-blitz/-/eslint-config-blitz-0.30.0-canary.2.tgz#04adce7231e68a2aa03a21170e4e115c9fd55543"
+  integrity sha512-thWVibuob7vuwDry1402pP8UKQSJEY3Isx1wMDJ4ZQwVYVrtt8TbJuTMYajznHAlH2E5cbwlbTjLxh3fwX/ATg==
   dependencies:
     "@typescript-eslint/eslint-plugin" "~4.14.0"
     "@typescript-eslint/parser" "~4.14.0"

@@ -1,18 +1,14 @@
-import { Ctx } from 'blitz'
+import { pipe } from 'blitz'
 import db from 'db'
-import { CreatePostInput, CreatePostInputType } from '../validations'
+import { CreatePost } from '../validations'
 
-export default async function createPost(input: CreatePostInputType, ctx: Ctx) {
-  ctx.session.$authorize()
-
-  const { body } = CreatePostInput.parse(input)
-
+export default pipe.resolver(pipe.zod(CreatePost), pipe.authorize(), async ({ body }, ctx) => {
   const post = await db.post.create({
     data: {
       body,
-      userId: ctx.session.userId,
+      userId: ctx.session.userId!,
     },
   })
 
   return post
-}
+})

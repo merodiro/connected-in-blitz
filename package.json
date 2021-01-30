@@ -33,7 +33,7 @@
     "@prisma/cli": "~2.15",
     "@prisma/client": "~2.15",
     "@tailwindcss/forms": "0.2.1",
-    "blitz": "0.30.0-canary.2",
+    "blitz": "0.30.0-canary.3",
     "react": "0.0.0-experimental-3310209d0",
     "react-dom": "0.0.0-experimental-3310209d0",
     "react-error-boundary": "3.1.0",
@@ -44,10 +44,10 @@
     "zod": "1.11.11"
   },
   "devDependencies": {
-    "@types/faker": "5.1.5",
+    "@types/faker": "5.1.6",
     "@types/preview-email": "2.0.0",
     "@types/react": "17.0.0",
-    "autoprefixer": "10",
+    "autoprefixer": "10.2.4",
     "eslint": "7.18.0",
     "faker": "5.2.0",
     "husky": "4.3.8",

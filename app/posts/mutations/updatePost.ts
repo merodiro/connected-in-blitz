@@ -1,12 +1,13 @@
-import { Ctx } from 'blitz'
+import { resolver } from 'blitz'
 import db, { Prisma } from 'db'
 
 type UpdatePostInput = Pick<Prisma.PostUpdateArgs, 'where' | 'data'>
 
-export default async function updatePost({ where, data }: UpdatePostInput, ctx: Ctx) {
-  ctx.session.$authorize()
+export default resolver.pipe(
+  resolver.authorize(),
+  async ({ where, data }: UpdatePostInput, ctx) => {
+    const post = await db.post.update({ where, data })
 
-  const post = await db.post.update({ where, data })
-
-  return post
-}
+    return post
+  }
+)

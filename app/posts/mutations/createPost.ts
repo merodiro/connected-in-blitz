@@ -9,7 +9,7 @@ export default resolver.pipe(
     const post = await db.post.create({
       data: {
         body,
-        userId: ctx.session.userId!,
+        userId: ctx.session.userId,
       },
     })
 

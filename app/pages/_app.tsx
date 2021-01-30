@@ -5,8 +5,9 @@ import {
   AuthenticationError,
   AuthorizationError,
   Head,
+  ErrorFallbackProps,
 } from 'blitz'
-import { ErrorBoundary, FallbackProps } from 'react-error-boundary'
+import { ErrorBoundary } from 'react-error-boundary'
 import { queryCache } from 'react-query'
 import LoginForm from 'app/auth/components/LoginForm'
 
@@ -40,7 +41,7 @@ export default function App({ Component, pageProps }: AppProps) {
   )
 }
 
-function RootErrorFallback({ error, resetErrorBoundary }: FallbackProps) {
+function RootErrorFallback({ error, resetErrorBoundary }: ErrorFallbackProps) {
   if (error instanceof AuthenticationError) {
     return <LoginForm onSuccess={resetErrorBoundary} />
   } else if (error instanceof AuthorizationError) {
@@ -52,10 +53,7 @@ function RootErrorFallback({ error, resetErrorBoundary }: FallbackProps) {
     )
   } else {
     return (
-      <ErrorComponent
-        statusCode={(error as any)?.statusCode || 400}
-        title={error?.message || error?.name}
-      />
+      <ErrorComponent statusCode={error.statusCode || 400} title={error.message || error.name} />
     )
   }
 }

@@ -11,7 +11,14 @@ import { ErrorBoundary } from 'react-error-boundary'
 import { queryCache } from 'react-query'
 import LoginForm from 'app/auth/components/LoginForm'
 
+import { setup } from 'twind/shim'
+import twindConfig from 'app/core/twind.config'
+
 import 'app/core/styles/index.css'
+
+if (typeof window !== 'undefined') {
+  setup(twindConfig)
+}
 
 export default function App({ Component, pageProps }: AppProps) {
   const getLayout = Component.getLayout || ((page) => page)
@@ -47,7 +54,7 @@ function RootErrorFallback({ error, resetErrorBoundary }: ErrorFallbackProps) {
   } else if (error instanceof AuthorizationError) {
     return (
       <ErrorComponent
-        statusCode={(error as any).statusCode}
+        statusCode={error.statusCode}
         title="Sorry, you are not authorized to access this"
       />
     )

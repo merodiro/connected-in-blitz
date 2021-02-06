@@ -4,6 +4,7 @@
  * and then export it. That way you can import here and anywhere else
  * and use it straight away.
  */
+import previewEmail from 'preview-email'
 import mailer from 'integrations/mailer'
 
 type ResetPasswordMailer = {
@@ -23,7 +24,6 @@ export function forgotPasswordMailer({ to, token }: ResetPasswordMailer) {
     html: `
       <h1>Reset Your Password</h1>
       <h3>NOTE: You must set up a production email integration in mailers/forgotPasswordMailer.ts</h3>
-
       <a href="${resetUrl}">
         Click here to set a new password
       </a>
@@ -32,7 +32,15 @@ export function forgotPasswordMailer({ to, token }: ResetPasswordMailer) {
 
   return {
     async send() {
-      mailer.sendMail(msg)
+      if (process.env.NODE_ENV === 'production') {
+        // TODO - send the production email, like this:
+        // await postmark.sendEmail(msg)
+        // throw new Error("No production email implementation in mailers/forgotPasswordMailer")
+        await mailer.sendMail(msg)
+      } else {
+        // Preview email in the browser
+        await previewEmail(msg)
+      }
     },
   }
 }

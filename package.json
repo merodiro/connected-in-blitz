@@ -2,14 +2,13 @@
   "name": "connected-in",
   "version": "1.0.0",
   "scripts": {
+    "dev": "blitz dev",
+    "build": "blitz build",
     "start": "blitz start",
     "studio": "blitz prisma studio",
-    "build": "blitz build",
     "lint": "eslint --ignore-path .gitignore --ext .js,.ts,.tsx .",
     "test": "jest",
-    "test:watch": "jest --watch",
-    "start:production": "blitz start --production --port $PORT",
-    "heroku-postbuild": "blitz prisma migrate deploy --preview-feature && blitz build"
+    "test:watch": "jest --watch"
   },
   "browserslist": [
     "defaults"

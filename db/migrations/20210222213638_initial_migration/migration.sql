@@ -1,6 +1,9 @@
 -- CreateEnum
 CREATE TYPE "TokenType" AS ENUM ('RESET_PASSWORD');
 
+-- CreateEnum
+CREATE TYPE "UserRoles" AS ENUM ('USER', 'ADMIN');
+
 -- CreateTable
 CREATE TABLE "User" (
     "id" SERIAL NOT NULL,
@@ -9,7 +12,7 @@ CREATE TABLE "User" (
     "name" TEXT,
     "email" TEXT NOT NULL,
     "hashedPassword" TEXT,
-    "role" TEXT NOT NULL DEFAULT E'user',
+    "role" "UserRoles" NOT NULL DEFAULT E'USER',
 
     PRIMARY KEY ("id")
 );

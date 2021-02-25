@@ -1,4 +1,3 @@
-import React from 'react'
 import { render } from 'test/utils'
 
 import Home from './index'
@@ -17,7 +16,7 @@ test.skip('renders blitz documentation link', () => {
     id: 1,
     name: 'User',
     email: 'user@email.com',
-    role: 'user',
+    role: 'USER',
   })
 
   const { getByText } = render(<Home />)

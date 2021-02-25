@@ -1,7 +1,6 @@
 import Form, { FORM_ERROR } from 'app/core/components/Form'
 import LabeledTextAreaField from 'app/core/components/LabeledTextAreaField'
 import { useMutation } from 'blitz'
-import React from 'react'
 import createPost from '../mutations/createPost'
 import { CreatePost } from '../validations'
 

@@ -14,8 +14,6 @@ import LoginForm from 'app/auth/components/LoginForm'
 import { setup } from 'twind/shim'
 import twindConfig from 'app/core/twind.config'
 
-import 'app/core/styles/index.css'
-
 if (typeof window !== 'undefined') {
   setup(twindConfig)
 }

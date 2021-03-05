@@ -16,7 +16,6 @@ const config = {
     '@font-face': [
       {
         fontFamily: 'Inter',
-        // @ts-expect-error twind is using wrong type
         fontWeight: '100 900',
         fontStyle: 'normal',
         src: 'url(/fonts/inter-var-latin.woff2) format("woff2")',

@@ -1,10 +1,13 @@
 import { resolver } from 'blitz'
-import db, { Prisma } from 'db'
+import db from 'db'
+import { DeletePost } from '../validations'
 
-type DeletePostInput = Pick<Prisma.PostDeleteArgs, 'where'>
-
-export default resolver.pipe(resolver.authorize(), async ({ where }: DeletePostInput, ctx) => {
-  const post = await db.post.delete({ where })
+export default resolver.pipe(resolver.zod(DeletePost), resolver.authorize(), async ({ id }) => {
+  const post = await db.post.delete({
+    where: {
+      id,
+    },
+  })
 
   return post
 })

@@ -1,12 +1,13 @@
 import { resolver } from 'blitz'
-import db, { Prisma } from 'db'
-
-type UpdatePostInput = Pick<Prisma.PostUpdateArgs, 'where' | 'data'>
+import db from 'db'
+import { UpdatePost } from '../validations'
 
 export default resolver.pipe(
+  resolver.zod(UpdatePost),
   resolver.authorize(),
-  async ({ where, data }: UpdatePostInput, ctx) => {
-    const post = await db.post.update({ where, data })
+  async ({ id, ...data }) => {
+    // TODO: in multi-tenant app, you must add validation to ensure correct tenant
+    const post = await db.post.update({ where: { id }, data })
 
     return post
   }

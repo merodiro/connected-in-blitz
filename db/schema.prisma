@@ -13,7 +13,7 @@ generator client {
 // --------------------------------------
 
 model User {
-  id             Int       @id @default(autoincrement())
+  id             String    @id @default(cuid())
   createdAt      DateTime  @default(now())
   updatedAt      DateTime  @updatedAt
   name           String?
@@ -27,7 +27,7 @@ model User {
 }
 
 model Session {
-  id                 Int       @id @default(autoincrement())
+  id                 String    @id @default(cuid())
   createdAt          DateTime  @default(now())
   updatedAt          DateTime  @updatedAt
   expiresAt          DateTime?
@@ -37,12 +37,12 @@ model Session {
   publicData         String?
   privateData        String?
 
-  user   User? @relation(fields: [userId], references: [id])
-  userId Int?
+  user   User?   @relation(fields: [userId], references: [id])
+  userId String?
 }
 
 model Token {
-  id          Int       @id @default(autoincrement())
+  id          String    @id @default(cuid())
   createdAt   DateTime  @default(now())
   updatedAt   DateTime  @updatedAt
   hashedToken String
@@ -52,19 +52,19 @@ model Token {
   expiresAt   DateTime
   sentTo      String
 
-  user   User @relation(fields: [userId], references: [id])
-  userId Int
+  user   User   @relation(fields: [userId], references: [id])
+  userId String
 
   @@unique([hashedToken, type])
 }
 
 model Post {
-  id        Int      @id @default(autoincrement())
+  id        String   @id @default(cuid())
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
   body      String
   user      User     @relation(fields: [userId], references: [id])
-  userId    Int
+  userId    String
 }
 
 // NOTE: It's highly recommended to use an enum for the token type

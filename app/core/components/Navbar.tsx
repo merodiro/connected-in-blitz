@@ -29,7 +29,7 @@ function ProfileDropdown() {
               <span className="sr-only">Open user menu</span>
               <img
                 className="w-8 h-8 rounded-full"
-                src={`https://avatar.oxro.io/avatar.svg?name=${user.name}`}
+                src={user.avatar ?? `https://avatar.oxro.io/avatar.svg?name=${user.name}`}
                 alt=""
               />
             </>

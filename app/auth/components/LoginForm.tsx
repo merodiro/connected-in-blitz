@@ -45,6 +45,12 @@ export const LoginForm = (props: LoginFormProps) => {
         </div>
       </Form>
 
+      <div className="flex justify-between mt-4">
+        <a href="/api/auth/google">Login with google</a>
+        <a href="/api/auth/github">Login with github</a>
+        <a href="/api/auth/facebook">Login with facebook</a>
+      </div>
+
       <div style={{ marginTop: '1rem' }}>
         Or{' '}
         <Link href="/signup">

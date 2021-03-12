@@ -9,16 +9,11 @@ import {
 } from 'blitz'
 import { ErrorBoundary } from 'react-error-boundary'
 import { queryCache } from 'react-query'
+import withTwindApp from '@twind/next/shim/app'
 import LoginForm from 'app/auth/components/LoginForm'
-
-import { setup } from 'twind/shim'
 import twindConfig from 'app/core/twind.config'
 
-if (typeof window !== 'undefined') {
-  setup(twindConfig)
-}
-
-export default function App({ Component, pageProps }: AppProps) {
+function App({ Component, pageProps }: AppProps) {
   const getLayout = Component.getLayout || ((page) => page)
   const router = useRouter()
 
@@ -62,3 +57,6 @@ function RootErrorFallback({ error, resetErrorBoundary }: ErrorFallbackProps) {
     )
   }
 }
+
+// @ts-expect-error Blitz uses different type
+export default withTwindApp(twindConfig, App)

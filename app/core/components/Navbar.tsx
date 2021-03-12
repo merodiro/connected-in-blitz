@@ -1,13 +1,18 @@
 import { Menu, Transition } from '@headlessui/react'
 import logout from 'app/auth/mutations/logout'
-import { Link, useMutation } from 'blitz'
+import { Link, useMutation, useRouter } from 'blitz'
 import { Suspense } from 'react'
 import { HiMenu, HiX } from 'react-icons/hi'
 import { useCurrentUser } from '../hooks/useCurrentUser'
 
 function ProfileDropdown() {
+  const router = useRouter()
   const user = useCurrentUser()
-  const [logoutMutation] = useMutation(logout)
+  const [logoutMutation] = useMutation(logout, {
+    onSuccess() {
+      router.push('/')
+    },
+  })
 
   if (!user) {
     return (

@@ -1502,6 +1502,11 @@
   resolved "https://registry.yarnpkg.com/@twind/forms/-/forms-0.1.4.tgz#b9d6edcd44bd216fe566199c77938a96f47cb46d"
   integrity sha512-OwI3xd0NTDlQo2M9L3NDVnngBU/mGgHaIAif91taGfiN4zpbwvYLSpUFIeBlcD8XeGvdFQv07T5hxavFRsKa7Q==
 
+"@twind/next@1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@twind/next/-/next-1.0.2.tgz#0cd2a200c24bb8b2fd39d34f72c1869033ac49cd"
+  integrity sha512-x0te+U0H8Qq9dXzzXQ4Vrdo/rXz47L5BrC8fPB4uWV4Oh3M7AFBCC0adg8h1LR9MB/XcaCGiXZcJdeZX9Nb/rg==
+
 "@twind/react@0.0.4":
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/@twind/react/-/react-0.0.4.tgz#45a513684265bea1ca6f589c799cfb65bd2b5624"

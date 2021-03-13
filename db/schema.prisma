@@ -17,6 +17,7 @@ model User {
   createdAt      DateTime  @default(now())
   updatedAt      DateTime  @updatedAt
   name           String?
+  avatar         String?
   email          String    @unique
   hashedPassword String?
   role           UserRoles @default(USER)

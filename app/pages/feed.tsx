@@ -38,6 +38,10 @@ const FeedPage: BlitzPage = () => {
   )
 }
 
+FeedPage.authenticate = {
+  redirectTo: '/login',
+}
+
 FeedPage.getLayout = (page) => <Layout title={'News feed'}>{page}</Layout>
 
 export default FeedPage

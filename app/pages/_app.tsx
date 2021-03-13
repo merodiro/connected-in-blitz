@@ -43,7 +43,11 @@ function App({ Component, pageProps }: AppProps) {
 
 function RootErrorFallback({ error, resetErrorBoundary }: ErrorFallbackProps) {
   if (error instanceof AuthenticationError) {
-    return <LoginForm onSuccess={resetErrorBoundary} />
+    return (
+      <main className="container flex items-center justify-center h-full mx-auto">
+        <LoginForm onSuccess={resetErrorBoundary} />
+      </main>
+    )
   } else if (error instanceof AuthorizationError) {
     return (
       <ErrorComponent

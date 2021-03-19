@@ -62,5 +62,4 @@ function RootErrorFallback({ error, resetErrorBoundary }: ErrorFallbackProps) {
   }
 }
 
-// @ts-expect-error Blitz uses different type
 export default withTwindApp(twindConfig, App)

@@ -6,9 +6,9 @@ import {
   AuthorizationError,
   Head,
   ErrorFallbackProps,
+  useQueryErrorResetBoundary,
 } from 'blitz'
 import { ErrorBoundary } from 'react-error-boundary'
-import { queryCache } from 'react-query'
 import withTwindApp from '@twind/next/shim/app'
 import LoginForm from 'app/auth/components/LoginForm'
 import twindConfig from 'app/core/twind.config'
@@ -16,16 +16,13 @@ import twindConfig from 'app/core/twind.config'
 function App({ Component, pageProps }: AppProps) {
   const getLayout = Component.getLayout || ((page) => page)
   const router = useRouter()
+  const { reset } = useQueryErrorResetBoundary()
 
   return (
     <ErrorBoundary
       FallbackComponent={RootErrorFallback}
       resetKeys={[router.asPath]}
-      onReset={() => {
-        // This ensures the Blitz useQuery hooks will automatically refetch
-        // data any time you reset the error boundary
-        queryCache.resetErrorBoundaries()
-      }}
+      onReset={reset}
     >
       <Head>
         <link

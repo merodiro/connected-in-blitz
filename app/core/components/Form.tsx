@@ -1,5 +1,6 @@
 import { useState, ReactNode, PropsWithoutRef } from 'react'
-import { FormProvider, useForm, UseFormOptions } from 'react-hook-form'
+import { FormProvider, useForm, UseFormProps } from 'react-hook-form'
+import { zodResolver } from '@hookform/resolvers/zod'
 import * as z from 'zod'
 import Button from './ui/button'
 
@@ -11,7 +12,7 @@ export interface FormProps<S extends z.ZodType<any, any>>
   submitText?: string
   schema?: S
   onSubmit: (values: z.infer<S>) => Promise<void | OnSubmitResult>
-  initialValues?: UseFormOptions<z.infer<S>>['defaultValues']
+  initialValues?: UseFormProps<z.infer<S>>['defaultValues']
 }
 
 interface OnSubmitResult {
@@ -32,16 +33,7 @@ export function Form<S extends z.ZodType<any, any>>({
 }: FormProps<S>) {
   const ctx = useForm<z.infer<S>>({
     mode: 'onBlur',
-    resolver: async (values) => {
-      try {
-        if (schema) {
-          schema.parse(values)
-        }
-        return { values, errors: {} }
-      } catch (error) {
-        return { values: {}, errors: error.formErrors?.fieldErrors }
-      }
-    },
+    resolver: schema ? zodResolver(schema) : undefined,
     defaultValues: initialValues,
   })
   const [formError, setFormError] = useState<string | null>(null)

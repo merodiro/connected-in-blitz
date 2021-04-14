@@ -42,7 +42,7 @@
     "passport-github2": "0.1.12",
     "passport-google-oauth20": "2.0.0",
     "prisma": "2.20.1",
-    "react": "0.0.0-experimental-a77dd13ed",
+    "react": "0.14.0",
     "react-dom": "0.0.0-experimental-a77dd13ed",
     "react-error-boundary": "3.1.1",
     "react-hook-form": "7.0.5",

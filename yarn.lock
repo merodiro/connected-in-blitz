@@ -1342,12 +1342,12 @@
   resolved "https://registry.yarnpkg.com/@opentelemetry/context-base/-/context-base-0.14.0.tgz#c67fc20a4d891447ca1a855d7d70fa79a3533001"
   integrity sha512-sDOAZcYwynHFTbLo6n8kIbLiVF3a3BLkrmehJUyEbT9F+Smbi47kLGS2gG2g0fjBLR/Lr1InPD7kXL7FaTqEkw==
 
-"@prisma/client@2.20.1":
-  version "2.20.1"
-  resolved "https://registry.yarnpkg.com/@prisma/client/-/client-2.20.1.tgz#45e7bade3a1b58972fc35e511578e313ead18770"
-  integrity sha512-/IYPubBi55rNMHfE0wwglA6eTWEZD77oz+x+3Mm9ji2lDKdS1lnYKZ0wZX0E3AB8gTNL/zsGtfzmfjgn3ePyIw==
+"@prisma/client@2.21.1":
+  version "2.21.1"
+  resolved "https://registry.yarnpkg.com/@prisma/client/-/client-2.21.1.tgz#790e09b7f0367a456cdb40cc5898d25494631106"
+  integrity sha512-37Sq4vBsZt21AvgMzo2kLvPs1LhqEWoelwGNK/tDNuDR+HbuxlDSX6lIiqSwd7s4/Lw5mx2Dtevpopq/RzaqzQ==
   dependencies:
-    "@prisma/engines-version" "2.20.0-26.60ba6551f29b17d7d6ce479e5733c70d9c00860e"
+    "@prisma/engines-version" "2.21.0-36.e421996c87d5f3c8f7eeadd502d4ad402c89464d"
 
 "@prisma/debug@2.19.0":
   version "2.19.0"
@@ -1375,10 +1375,10 @@
     terminal-link "^2.1.1"
     undici "3.3.3"
 
-"@prisma/engines-version@2.20.0-26.60ba6551f29b17d7d6ce479e5733c70d9c00860e":
-  version "2.20.0-26.60ba6551f29b17d7d6ce479e5733c70d9c00860e"
-  resolved "https://registry.yarnpkg.com/@prisma/engines-version/-/engines-version-2.20.0-26.60ba6551f29b17d7d6ce479e5733c70d9c00860e.tgz#1189f0a7e682f500015446cfe2b34d2753452190"
-  integrity sha512-fJhbGZXm2SPs/RsI79Ew4SFe+6QmChNdgU2I/SIjmU18bUgK8f1TBEWnVtFdBqEDHYPGxbpaianF7lp04KN7EA==
+"@prisma/engines-version@2.21.0-36.e421996c87d5f3c8f7eeadd502d4ad402c89464d":
+  version "2.21.0-36.e421996c87d5f3c8f7eeadd502d4ad402c89464d"
+  resolved "https://registry.yarnpkg.com/@prisma/engines-version/-/engines-version-2.21.0-36.e421996c87d5f3c8f7eeadd502d4ad402c89464d.tgz#b749bae4173eb766dafc298aaa7d883c2dbe555b"
+  integrity sha512-9/fE1gdPWmjbMjXUJjrTMt848TsgEnSjZCcJ1wu9OAcRlAKKJBLehftqC3gSEShDijvMYgeTdGU5snMpwmv4vg==
 
 "@prisma/engines@2.19.0-39.c1455d0b443d66b0d9db9bcb1bb9ee0d5bbc511d":
   version "2.19.0-39.c1455d0b443d66b0d9db9bcb1bb9ee0d5bbc511d"

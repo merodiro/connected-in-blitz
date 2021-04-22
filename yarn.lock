@@ -10112,10 +10112,10 @@ tweetnacl@^0.14.3, tweetnacl@~0.14.0:
   resolved "https://registry.yarnpkg.com/tweetnacl/-/tweetnacl-0.14.5.tgz#5ae68177f192d4456269d108afa93ff8743f4f64"
   integrity sha1-WuaBd/GS1EViadEIr6k/+HQ/T2Q=
 
-twind@0.16.10:
-  version "0.16.10"
-  resolved "https://registry.yarnpkg.com/twind/-/twind-0.16.10.tgz#9e7ac848b48568fc4a49fc8ea2d218cbbadb9aab"
-  integrity sha512-GjTPjEbon/Z2FOVsEVkF6nCXqdpmNtlcfIC3p4zwWm+WUsLraryW2OK6pkWwjkXPVwWZEm0RTjzsWOuPs3gaHQ==
+twind@0.16.12:
+  version "0.16.12"
+  resolved "https://registry.yarnpkg.com/twind/-/twind-0.16.12.tgz#804dc9e3942bb0a9f731c52785420e8671e73677"
+  integrity sha512-G3O43CfnMv2ajNzUkPabVW5Dt+ipSi5NuDIV33F4c4YDT1aUpxB+cCDW2PzQiiMS9SnOJ19CnYOgJ6RPcHF+Kg==
   dependencies:
     csstype "^3.0.5"
     htmlparser2 "^6.0.0"

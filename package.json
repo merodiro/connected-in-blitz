@@ -28,7 +28,7 @@
     "@hookform/resolvers": "2.1.0",
     "@prisma/client": "2.20.1",
     "@twind/forms": "0.1.4",
-    "@twind/next": "1.0.6",
+    "@twind/next": "1.0.7",
     "@twind/react": "0.0.4",
     "blitz": "0.34.0-canary.1",
     "nodemailer": "6.5.0",

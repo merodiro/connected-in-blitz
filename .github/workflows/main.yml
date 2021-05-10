@@ -50,9 +50,9 @@ jobs:
             **/node_modules
             /home/runner/.cache/Cypress
             C:\Users\runneradmin\AppData\Local\Cypress\Cache
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          key: ${{ runner.os }}-yarn-v1-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
-            ${{ runner.os }}-yarn-
+            ${{ runner.os }}-yarn-v1-
       - name: Install packages
         run: yarn install --frozen-lockfile
 

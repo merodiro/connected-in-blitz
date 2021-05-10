@@ -24,7 +24,7 @@
     ]
   },
   "dependencies": {
-    "@headlessui/react": "0.3.2",
+    "@headlessui/react": "1.2.0",
     "@hookform/resolvers": "2.1.0",
     "@prisma/client": "2.20.1",
     "@twind/forms": "0.1.4",

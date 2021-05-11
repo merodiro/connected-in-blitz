@@ -886,10 +886,10 @@
   resolved "https://registry.yarnpkg.com/@headlessui/react/-/react-1.2.0.tgz#e48652bfce82ddf73d7f331faeb9db6526ee6874"
   integrity sha512-19DkLz8gDgbi+WvkoTzi9vs0NK9TJf94vbYhMzB4LYJo03Kili0gmvXT9CiKZoxXZ7YAvy/b1U1oQKEnjWrqxw==
 
-"@hookform/resolvers@2.1.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@hookform/resolvers/-/resolvers-2.1.0.tgz#54e022b0264a75423800b088dac2ebb28a20a43e"
-  integrity sha512-62K7val4LIwy4+hfRy39ZwzrtmpFcXMWfi3okSfvEKBexoM7kI3rHD7XTLY1WWmdbv6IoSQ3up2Qgja5ki5isw==
+"@hookform/resolvers@2.4.0":
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/@hookform/resolvers/-/resolvers-2.4.0.tgz#3b454463fbb5e7a0de4da029fa34e677f32d8d8d"
+  integrity sha512-KiHc7Uwd2IJMvPTMQ9vQxfss2ulq2gRYL/HYZ90qiTs+07UgGWCikiIvE2pKjjGVltEYjq5eR8x0ITmoyEjGxQ==
 
 "@istanbuljs/load-nyc-config@^1.0.0":
   version "1.1.0"

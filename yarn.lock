@@ -9782,10 +9782,10 @@ tweetnacl@^0.14.3, tweetnacl@~0.14.0:
   resolved "https://registry.yarnpkg.com/tweetnacl/-/tweetnacl-0.14.5.tgz#5ae68177f192d4456269d108afa93ff8743f4f64"
   integrity sha1-WuaBd/GS1EViadEIr6k/+HQ/T2Q=
 
-twind@0.16.14:
-  version "0.16.14"
-  resolved "https://registry.yarnpkg.com/twind/-/twind-0.16.14.tgz#4d8e14d44cfa30f79a9da36c98bac97eb7d8a4c2"
-  integrity sha512-r9QvTz/1fXZ8XP0DI9QWUQhQHgybbuBudUcn4UVArNP4Lf0UkQfD+HrrZuhdLhuM/fBxQ4pthhvJ5xSKOHsNCA==
+twind@0.16.15:
+  version "0.16.15"
+  resolved "https://registry.yarnpkg.com/twind/-/twind-0.16.15.tgz#217b286d2bd90dcfdece14a8827c9605a50e3f1e"
+  integrity sha512-7Byv1hmzGHs4ekLF/EV5Xbz/J6fd3MdLezG3ttSBUBwf5bqBJH82f1JCixrfAYxQerD76HmZNnCSvggO+B0f6w==
   dependencies:
     csstype "^3.0.5"
     htmlparser2 "^6.0.0"

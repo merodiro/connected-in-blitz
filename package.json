@@ -30,7 +30,7 @@
     "@twind/forms": "0.1.4",
     "@twind/next": "1.0.7",
     "@twind/react": "0.0.4",
-    "blitz": "0.34.3",
+    "blitz": "0.35.2",
     "nodemailer": "6.6.0",
     "passport-facebook": "3.0.0",
     "passport-github2": "0.1.12",

@@ -35,7 +35,7 @@
     "@types/passport-github2": "1.2.4",
     "@types/passport-google-oauth20": "2.0.8",
     "@types/preview-email": "2.0.0",
-    "@types/react": "17.0.10",
+    "@types/react": "17.0.11",
     "blitz": "0.37.0",
     "eslint": "7.28.0",
     "faker": "5.5.3",

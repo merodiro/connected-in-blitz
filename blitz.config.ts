@@ -3,7 +3,7 @@ import { sessionMiddleware, simpleRolesIsAuthorized } from 'blitz'
 module.exports = {
   middleware: [
     sessionMiddleware({
-      // @ts-expect-error
+      cookiePrefix: 'connected-in',
       isAuthorized: simpleRolesIsAuthorized,
     }),
   ],

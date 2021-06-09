@@ -1,7 +1,7 @@
 import { useState, ReactNode, PropsWithoutRef } from 'react'
 import { FormProvider, useForm, UseFormProps } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
-import * as z from 'zod'
+import { z } from 'zod'
 import Button from './ui/button'
 
 export interface FormProps<S extends z.ZodType<any, any>>

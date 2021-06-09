@@ -10,6 +10,7 @@ import {
 } from 'blitz'
 import { ErrorBoundary } from 'react-error-boundary'
 import withTwindApp from '@twind/next/shim/app'
+import { Suspense } from 'react'
 import LoginForm from 'app/auth/components/LoginForm'
 import twindConfig from 'app/core/twind.config'
 
@@ -19,22 +20,24 @@ function App({ Component, pageProps }: AppProps) {
   const { reset } = useQueryErrorResetBoundary()
 
   return (
-    <ErrorBoundary
-      FallbackComponent={RootErrorFallback}
-      resetKeys={[router.asPath]}
-      onReset={reset}
-    >
-      <Head>
-        <link
-          rel="preload"
-          href="/fonts/inter-var-latin.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
-      </Head>
-      {getLayout(<Component {...pageProps} />)}
-    </ErrorBoundary>
+    <Suspense fallback="Loading...">
+      <ErrorBoundary
+        FallbackComponent={RootErrorFallback}
+        resetKeys={[router.asPath]}
+        onReset={reset}
+      >
+        <Head>
+          <link
+            rel="preload"
+            href="/fonts/inter-var-latin.woff2"
+            as="font"
+            type="font/woff2"
+            crossOrigin="anonymous"
+          />
+        </Head>
+        {getLayout(<Component {...pageProps} />)}
+      </ErrorBoundary>
+    </Suspense>
   )
 }
 

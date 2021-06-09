@@ -1,38 +1,7 @@
 version: 2
 updates:
-- package-ecosystem: npm
-  directory: "/"
-  schedule:
-    interval: daily
-  open-pull-requests-limit: 10
-  ignore:
-  - dependency-name: "@headlessui/react"
-    versions:
-    - 1.0.0
-    - 1.1.0
-  - dependency-name: react-hook-form
-    versions:
-    - 7.1.0
-    - 7.2.1
-    - 7.2.3
-    - 7.3.4
-  - dependency-name: twind
-    versions:
-    - 0.16.11
-    - 0.16.12
-  - dependency-name: blitz
-    versions:
-    - 0.34.0-danger.625089a0b.9
-    - 0.34.1
-  - dependency-name: "@hookform/resolvers"
-    versions:
-    - 2.3.0
-  - dependency-name: eslint
-    versions:
-    - 7.24.0
-  - dependency-name: "@prisma/client"
-    versions:
-    - 2.21.1
-  - dependency-name: react
-    versions:
-    - 0.14.0
+  - package-ecosystem: npm
+    directory: '/'
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 10

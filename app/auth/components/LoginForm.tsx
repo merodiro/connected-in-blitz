@@ -80,7 +80,7 @@ export const LoginForm = (props: LoginFormProps) => {
         </Form>
 
         <div style={{ marginTop: '1rem' }}>
-          Don't have an account?{' '}
+          {"Don't have an account? "}
           <Link href="/signup">
             <a className="text-blue-600 underline">Sign Up</a>
           </Link>

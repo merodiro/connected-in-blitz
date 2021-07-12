@@ -36,7 +36,7 @@
     "@types/passport-google-oauth20": "2.0.8",
     "@types/preview-email": "2.0.0",
     "@types/react": "17.0.11",
-    "blitz": "0.38.0",
+    "blitz": "0.38.5",
     "eslint": "7.28.0",
     "faker": "5.5.3",
     "husky": "6.0.0",

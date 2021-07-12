@@ -51,7 +51,7 @@
     "preview-email": "3.0.4",
     "prisma": "2.25.0",
     "react": "0.0.0-experimental-e6be2d531",
-    "react-dom": "0.0.0-experimental-e6be2d531",
+    "react-dom": "18.0.0-alpha-241485a2c-20210708",
     "react-error-boundary": "3.1.3",
     "react-hook-form": "7.8.8",
     "react-icons": "4.2.0",
